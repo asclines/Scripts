@@ -4,7 +4,7 @@
 sudo apt-get update
 sudo apt-get upgrade
 
-# All the packages needed
+# All the packages needed for everything in this script to work
 sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip git cmake gcc g++
 
 # Setup for lastpass
