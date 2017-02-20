@@ -11,7 +11,7 @@ LOGS=$DIR/Logs
 BUD=~/.dotfiles_old #Back Up Directory
 
 # Make Logs folder
-mkdir -o $LOGS
+mkdir -p $LOGS
 
 # Create dotfiles backup folder
 echo  "Creating $BUD for backing up initial dotfiles"
