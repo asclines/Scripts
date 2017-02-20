@@ -21,9 +21,9 @@ echo " "
 
 echo "Linking files"
 cd $DIR/link
-for entry in *.sh; do
+for entry in *; do
 	echo "Found $entry"
-	if [ -f ~/.$entry ]; then
+	if [ -f ~/.$entry ] && [ $entry != 'README.md']; then
 		echo "Backing up old $entry files"
 		mv ~/.$entry $BUD/
 	elif [ -L ~/.$entry ]; then
