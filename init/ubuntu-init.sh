@@ -31,3 +31,5 @@ ssh -T git@github.com
 mkdir ~/Projects
 cd ~/Projects
 git clone git@github.com:asclines/Scripts.git
+cd ./Scripts
+bash install.sh
