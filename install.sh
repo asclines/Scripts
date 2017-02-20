@@ -37,7 +37,14 @@ for entry in *; do
 done
 
 # Link .bashrc.d
-ln -s $DIR/bashrc.d ~/.bashrc.d
+BASHRCDSRC=$DIR/bashrc.d
+BASHRCDDEST=~/.bashrc.d
+if [ -d $BASHRCDDEST ]; then
+  echo "Backing up old $BASHRCDDEST folder"
+  mv -f $BASHRCDDEST
+fi
+
+ln -s $BASHRCD $BASHRCDDEST
 
 cd $DIR
 echo "Done linking files"
