@@ -44,7 +44,7 @@ if [ -d $BASHRCDDEST ]; then
   mv -f $BASHRCDDEST $BUD/
 fi
 
-ln -s $BASHRCD $BASHRCDDEST
+ln -s $BASHRCDDEST $BASHRCDDEST
 
 cd $DIR
 echo "Done linking files"
