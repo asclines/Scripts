@@ -49,12 +49,3 @@ ln -s $BASHRCDSRC/ $BASHRCDDEST
 cd $DIR
 echo "Done linking files"
 echo " "
-
-
-if [ -d ~/Projects ]; then
-  echo "Creating bookmark Projects to ~/Projects"
-  cd ~/Projects
-  b Projects
-  cd $DIR
-  echo "Done"
-fi
