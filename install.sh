@@ -6,9 +6,9 @@
 ################################################################################
 
 # Variables
-O_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 LOGS=$DIR/Logs
-BUD=~/.dotfiles_old #Back Up Directory
+BUD=~/.scripts_old #Back Up Directory
 
 # Make Logs folder
 mkdir -p $LOGS
@@ -17,4 +17,25 @@ mkdir -p $LOGS
 echo  "Creating $BUD for backing up initial dotfiles"
 mkdir -p $BUD
 echo "Done"
+echo " "
+
+echo "Linking files"
+cd $DIR/link
+for entry in *; do
+	echo "Found $entry"
+	if [ -f ~/.$entry ]; then
+		echo "Backing up old $entry files"
+		mv ~/.$entry $BUD/
+	elif [ -L ~/.$entry ]; then
+		echo "Removing old $entry symlink"
+		rm ~/.$entry
+	fi
+
+	echo "Linking $entry"
+	ln -s $DIR/link/$entry ~/.$entry
+	echo " "
+done
+
+cd $DIR
+echo "Done linking files"
 echo " "
