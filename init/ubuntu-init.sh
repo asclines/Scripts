@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get upgrade
 
 # All the packages needed for everything in this script to work
-sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip git cmake gcc g++
+sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip git cmake gcc g++ tmux
 
 # Setup for lastpass
 mkdir -p ~/.local/share
