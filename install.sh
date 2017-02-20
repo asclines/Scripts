@@ -41,7 +41,7 @@ BASHRCDSRC=$DIR/bashrc.d
 BASHRCDDEST=~/.bashrc.d
 if [ -d $BASHRCDDEST ]; then
   echo "Backing up old $BASHRCDDEST folder"
-  mv -f $BASHRCDDEST
+  mv -f $BASHRCDDEST $BUD/
 fi
 
 ln -s $BASHRCD $BASHRCDDEST
