@@ -21,7 +21,7 @@ echo " "
 
 echo "Linking files"
 cd $DIR/link
-for entry in *; do
+for entry in *.sh; do
 	echo "Found $entry"
 	if [ -f ~/.$entry ]; then
 		echo "Backing up old $entry files"
@@ -35,6 +35,9 @@ for entry in *; do
 	ln -s $DIR/link/$entry ~/.$entry
 	echo " "
 done
+
+# Link .bashrc.d
+ln -s $DIR/bashrc.d ~/.bashrc.d
 
 cd $DIR
 echo "Done linking files"
