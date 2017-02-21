@@ -1,0 +1,22 @@
+[user]
+	name = asclines
+	email = injpk23@gmail.com
+[alias]
+	# Info
+	st = status
+
+	# Changes
+	ci = commit
+	ph = push
+	pl = pull
+
+	# Branching
+	br = branch
+	co = checkout
+
+	# Working with upstreams
+	fu = fetch upstream
+	pu = pull upstream
+	
+[core]
+	autocrlf = input

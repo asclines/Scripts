@@ -1,0 +1,8 @@
+alias chmodx="chmod +x"
+alias python="python2.7"
+alias ls="ls --color"
+alias lsg="ls | grep"
+alias home="cd ~"
+alias ssdown="sudo shutdown 0"
+alias tmux="exec tmux"
+alias insynch="insync-headless"

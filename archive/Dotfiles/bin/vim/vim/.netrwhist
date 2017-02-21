@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/alexander/Scratchwork/Algos/MergeSort'
+let g:netrw_dirhist_2='/etc/vim'
+let g:netrw_dirhist_3='/etc/profile.d'
+let g:netrw_dirhist_4='/home/alexander/GitRepos/MyRepos.d/Flamingo/dataframe/transporter/source_files'
+let g:netrw_dirhist_5='/home/alexander/GitRepos/MyRepos.d/Dotfiles/link/bashrc_local.d'
+let g:netrw_dirhist_6='/home/alexander/GitRepos/MyRepos.d/Playground/BoostMpi/out'
+let g:netrw_dirhist_7='/home/alexander/GitRepos/MyRepos.d/Dotfiles/bin'
