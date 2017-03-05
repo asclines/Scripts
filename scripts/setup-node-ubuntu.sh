@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Sets up a Node.js development system on an Ubuntu system
+# Sets up a Node.js development environment on an Ubuntu system
 
 # Generic update
 sudo apt-get update
