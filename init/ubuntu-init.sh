@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
-
+# http://bit.ly/2msEB5T
 # Generic update
 sudo apt-get update
 sudo apt-get upgrade
 
 # All the packages needed for everything in this script to work
-sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip git cmake gcc g++ tmux
+sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip git cmake gcc g++ pkg-config
+
+# Optional packages
+sudo apt-get install tmux open-ssh
+
 
 # Setup for lastpass
 mkdir -p ~/.local/share
