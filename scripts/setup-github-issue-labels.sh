@@ -1,6 +1,7 @@
 #!/bin/bash
+# Used to setup GitHub labels.
 
-# TO use user/pass instead
+# T use user/pass instead
 # Replace: "-H "Authorization: token $TOKEN" "
 # with: "--user "$USER:$PASS""
 # echo -n "GitHub User: "
