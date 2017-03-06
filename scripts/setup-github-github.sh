@@ -13,9 +13,9 @@
 cd ..
 DIR="$(pwd)"
 
-TYPE=group
+TYPE=group # TODO: Once there are mutliple types, switch this to an input
 
-
+# Get user input
 echo -n "Token: "
 read TOKEN
 
@@ -23,16 +23,20 @@ echo ""
 echo -n "GitHub Repo (e.g. foo/bar): "
 read REPO
 
+# Set up vars
 REPO_USER=$(echo "$REPO" | cut -f1 -d /)
-
 REPO_NAME=$(echo "$REPO" | cut -f2 -d /)
-
 REPO_DIR=$DIR/ignore/githubreposetup
+
 echo $REPO_DIR
+
+# Download repo
 git clone git@github.com:$REPO_USER/$REPO_NAME.git $REPO_DIR
 cd $REPO_DIR
 echo $(pwd)
 git checkout -B github-folder
+
+# Set up github folder/files
 mkdir .github
 cp $DIR/markdowns/.github/contributing-$TYPE.md .github/CONTRIBUTING.md
 cp $DIR/markdowns/.github/issue-$TYPE.md .github/ISSUE_TEMPLATE.md
