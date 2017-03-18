@@ -17,6 +17,17 @@ echo ""
 echo -n "GitHub Repo (e.g. foo/bar): "
 read REPO
 
+RESPONSE=s
+while [ $RESPONSE != "y" ] && [ $RESPONSE != "n" ]; do
+  echo ""
+  echo -n "Did you set tech labels?[y/n]: "
+  read RESPONSE
+done
+
+if [ $RESPONSE == "n" ]; then
+  exit 0
+fi
+
 REPO_USER=$(echo "$REPO" | cut -f1 -d /)
 
 REPO_NAME=$(echo "$REPO" | cut -f2 -d /)
@@ -46,6 +57,7 @@ curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"
 
 # Language & Technology Specific, UNCOMMENT per project
 # curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"TECH","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"Java","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"Gradle","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
-curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"XML","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+# curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"Python","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+# curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"Java","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+# curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"Gradle","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
+# curl -H "Authorization: token $TOKEN" --include --request POST --data '{"name":"XML","color":"BFD4F2"}' "https://api.github.com/repos/$REPO_USER/$REPO_NAME/labels"
