@@ -1,0 +1,12 @@
+filetype on
+syntax on
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+
+" Theme
+Plug 'mhartington/oceanic-next'
+
+" Initialize plugin system
+call plug#end()
