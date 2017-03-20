@@ -14,3 +14,8 @@ sudo python2.7 get-pip.py
 sudo python3 get-pip.py
 
 rm get-pip.py
+
+# Install pylint for Python 3 and link it
+sudo pip3 install pylint 
+
+ln -s $PWD/../linter/pylintrc ~/.pylintrc
