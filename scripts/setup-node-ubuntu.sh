@@ -13,3 +13,11 @@ source ~/.bashrc
 nvm install --lts
 nvm install node
 nvm use node
+
+# Setup eslint
+npm install -g eslint eslint-plugin-chai-friendly
+
+(
+  export PKG=eslint-config-airbnb;
+    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install -g "$PKG@latest"
+)
