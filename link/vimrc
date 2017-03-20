@@ -1,5 +1,8 @@
+" General Vim stuff
 filetype on
 syntax on
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
@@ -10,6 +13,9 @@ Plug 'mhartington/oceanic-next'
 
 " Syntax Checking
 Plug 'vim-syntastic/syntastic'
+
+" Code formatting
+Plug 'rhysd/vim-clang-format'
 
 " Initialize plugin system
 call plug#end()
@@ -25,3 +31,15 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_cpp_compiler = "g++"
+let g:syntastic_cpp_compiler_options = " -std=c++11 -Wall -Wextra -Wpedantic"
+let g:syntastic_cpp_checkers = ['gcc']
+
+" ClangFormat settings
+let g:clang_format#code_style = "google"
+let g:clang_format#command = "clang-format-3.8"
+let g:clang_format#style_options = {
+            \ "AccessModifierOffset" : -4,
+            \ "AllowShortIfStatementsOnASingleLine" : "true",
+            \ "AlwaysBreakTemplateDeclarations" : "true",
+            \ "Standard" : "C++11"}
