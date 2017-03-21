@@ -4,6 +4,10 @@ syntax on
 set number
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 
+" For handing 80 character line width
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
 
