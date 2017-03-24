@@ -24,6 +24,11 @@ Plug 'vim-syntastic/syntastic'
 
 " Code formatting
 Plug 'rhysd/vim-clang-format'
+Plug 'scrooloose/nerdcommenter'
+
+" Visual Interface
+Plug 'bling/vim-airline'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
