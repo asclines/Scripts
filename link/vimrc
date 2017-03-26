@@ -25,6 +25,7 @@ Plug 'vim-syntastic/syntastic'
 " Code formatting
 Plug 'rhysd/vim-clang-format'
 Plug 'scrooloose/nerdcommenter'
+Plug 'mtscout6/syntastic-local-eslint.vim'
 
 " Visual Interface
 Plug 'bling/vim-airline'
@@ -45,8 +46,12 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+"let g:syntastic_javascript_eslint_exec = '$(npm bin)/eslint'
+
 let g:syntastic_python_checkers = ['pylint']
 let g:syntastic_javascript_checkers = ['eslint']
+
 let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = " -std=c++11 -Wall -Wextra -Wpedantic"
 let g:syntastic_cpp_checkers = ['gcc']
