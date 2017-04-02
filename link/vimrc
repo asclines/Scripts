@@ -26,6 +26,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'rhysd/vim-clang-format'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mtscout6/syntastic-local-eslint.vim'
+Plug 'Chiel92/vim-autoformat'
 
 " Visual Interface
 Plug 'bling/vim-airline'
@@ -71,3 +72,7 @@ let g:gitgutter_sign_modified = 'yy'
 let g:gitgutter_sign_removed = 'zz'
 let g:gitgutter_sign_removed_first_line = '^^'
 let g:gitgutter_sign_modified_removed = 'ww'
+
+" NerdCommenter Settings
+let g:NERDSpaceDelims = 1 "Add spaces after comment delimiters by default
+let g:NERDDefaultAlign = 'left' " Align line-wise comment delimiters flush left instead of following code indentation
