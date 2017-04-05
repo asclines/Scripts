@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =4
 let g:netrw_dirhist_1='/home/alexander/.vim'
 let g:netrw_dirhist_2='/mnt/c/Codebase/Projects/EOCApp/Frontend/src'
 let g:netrw_dirhist_3='/mnt/c/Codebase/Playground/speedup_bashrc/traces'
+let g:netrw_dirhist_4='/mnt/c/Codebase/Projects/EOCApp/frontend-windows/src/server'
