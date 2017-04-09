@@ -3,10 +3,14 @@ filetype on
 syntax on
 set number
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
+set t_Co=256
 
 " Color scheme
-set background=dark
-colorscheme delek
+" set background=dark
+colorscheme google
+" delek
+
+
 " For handing 80 character line width
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
