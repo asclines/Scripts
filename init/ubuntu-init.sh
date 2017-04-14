@@ -8,7 +8,7 @@ sudo apt-get upgrade
 sudo apt-get install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-dev pinentry-curses xclip git cmake gcc g++ pkg-config
 
 # Optional packages
-sudo apt-get install tmux open-ssh
+sudo apt-get install open-ssh # tmux
 
 
 # Setup for lastpass
