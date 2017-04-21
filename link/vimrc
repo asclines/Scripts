@@ -3,12 +3,10 @@ filetype on
 syntax on
 set number
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
-set t_Co=256
+set t_Co=16 "256
 
-" Color scheme
-set background=dark
-colorscheme delek
-
+" Solarized Settings
+let g:solarized_termcolors=16
 
 " For handing 80 character line width
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
@@ -21,6 +19,7 @@ call plug#begin('~/.vim/plugged')
 
 " Theme
 Plug 'mhartington/oceanic-next'
+Plug 'altercation/vim-colors-solarized'
 
 " Syntax Checking
 Plug 'vim-syntastic/syntastic'
@@ -79,3 +78,9 @@ let g:gitgutter_sign_modified_removed = 'ww'
 " NerdCommenter Settings
 let g:NERDSpaceDelims = 1 "Add spaces after comment delimiters by default
 let g:NERDDefaultAlign = 'left' " Align line-wise comment delimiters flush left instead of following code indentation
+
+" Color scheme
+" set background=dark
+colorscheme google "solarized
+
+
