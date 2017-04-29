@@ -29,6 +29,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'scrooloose/nerdcommenter'
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'Chiel92/vim-autoformat'
+Plug 'Raimondi/delimitMate' " For closing of things
 
 " Visual Interface
 Plug 'bling/vim-airline'
