@@ -1,3 +1,4 @@
 Logs/*
 ignore/*
 *.swp
+link/vim/plugged/*
