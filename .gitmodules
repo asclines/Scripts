@@ -1,0 +1,3 @@
+[submodule ".zshrc.d/zsh-interactive-cd"]
+	path = dotfiles/.zshrc.d/zsh-interactive-cd
+	url = https://github.com/changyuheng/zsh-interactive-cd.git

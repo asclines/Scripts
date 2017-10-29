@@ -2,3 +2,10 @@ Logs/*
 ignore/*
 *.swp
 link/vim/plugged/*
+
+# Google files
+dotfiles/.commonrc.d/alias_google.sh
+dotfiles/.commonrc.d/googlerc
+dotfiles/.vim/10-glug.vim
+dotfiles/.vim/plugin/20-google.vim
+dotfiles/.zshrc.d/google_zshrc
