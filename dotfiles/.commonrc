@@ -2,9 +2,11 @@
 
 echo Welcome Alexander the Great!
 
+xmodmap ~/.xmodmap
 
 export EDITOR='vim'
 export PATH=$PATH::~/.bin
+export HISTCONTROL=ignoreboth:erasedups
 
 for f in ~/.commonrc.d/*.sh; do
   . $f
